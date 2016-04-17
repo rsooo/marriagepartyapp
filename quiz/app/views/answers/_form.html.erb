@@ -1,0 +1,19 @@
+<%= simple_form_for @answer, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name, input_html: {readonly: "readonly"} %>
+  <%= f.input :q1 , required: true, collection: [["1: Orange", 1],["2: Lemon & Lime", 2],["3: Apple", 3],["4: Watermelon", 4]]%>
+  <%= f.input :q2 , required: true, collection: [["1: Kyoto", 1],["2: Tokyo", 2],["3: Nara", 3],["4: Kanagawa", 4]]%>
+  <%= f.input :q3 , required: true, collection: [["1: Harvard University", 1],["2: Osaka University", 2],["3: Pierre and Marie Curie University ", 3],["4: Paris Dauphine", 4]]%>
+  <%= f.input :q4 , required: true, collection: [["1: Panda", 1],["2: Owl", 2],["3: Cat", 3],["4: Camel", 4]]%>
+  <%= f.input :q5 , required: true, collection: [["1: 11", 1],["2: 12", 2],["3: 13", 3],["4: 14", 4]]%>
+  <%= f.input :q6 , required: true, collection: [["1: 0", 1],["2: 1", 2],["3: 2", 3],["4: 5", 4]]%>
+  <%= f.input :q7 , required: true, collection: [["1: AS", 1],["2: TO", 2],["3: THE", 3],["4: HOGE", 4]]%>
+  <%= f.input :q8 , required: true, collection: [["1: Box", 1],["2: Wood", 2],["3: Party", 3],["4: Wedding", 4]]%>
+  <%= f.input :q9 , required: true, collection: [["1: Panda", 1],["2: Owl", 2],["3: Cat", 3],["4: Camel", 4]]%>
+  <%= f.input :q10 , required: true, collection: [["1: > ", 1],["2: < ", 2],["3: = ", 3],["4: ≒ ", 4]]%>
+  <%= f.input :comment %>
+
+  <%= f.button :submit, :class => 'btn-primary', :value => '送信する！', data: {confirm: "上記の内容で送信します。よろしいですか？"}%>
+<!--  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                answers_path, :class => 'btn btn-default' %>
+-->
+<% end %>

@@ -1,0 +1,14 @@
+<%msg_send=(@english == nil) ? "送信する！" : "Send!!" %>
+<%msg_attend=(@english == nil) ? "出席可否" : "I will join!" %>
+<%msg_confirm=(@english == nil) ? "上記の内容で送信します。よろしいですか？" : "You are about to submit. Are you Okay?" %>
+
+<%= simple_form_for @attend, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name, input_html: {readonly: "readonly" }%>
+  <%= f.input :attend, label: msg_attend, checked: ['Yes', true], as: :radio_buttons %>
+  <%= f.input :comment %>
+
+  <%= f.button :submit, :class => 'btn-primary', :value => msg_send, data: {confirm: msg_confirm}%>
+<!--  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                attends_path, :class => 'btn btn-default' %>
+-->
+<% end %>

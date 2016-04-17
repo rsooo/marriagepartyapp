@@ -1,0 +1,23 @@
+<h1>登録フォーム</h1>
+
+<%= form_for @answer, :url => {:action => 'create', :controller => 'answers'} do |f| %>
+  <div class="form-group">
+    <%= f.label :name, "名前" %>
+    <%= f.text_field :name ,  class:"form-control",  style:"width:150px;"%>
+  </div>
+  <div class="form-group">
+    <%= f.label :q1, "Q1 Answer" %>
+    <%= f.text_field :q1 , class:"form-control", style:"width:150px;" %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :comment, "コメント" %>
+    <%= f.text_field :comment ,  class:"form-control", style:"width:300px;"%>
+  </div>
+  <div class="action">
+    <%= f.submit "登録する！", class: "btn btn-primary" %>
+  </div>
+<!--<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+-->
+<% end %>

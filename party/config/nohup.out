@@ -1,0 +1,51 @@
+Warning: You're using Rubygems 2.0.14 with Spring. Upgrade to at least Rubygems 2.1.0 and run `gem pristine --all` for better startup performance.
+[2016-04-14 19:31:58] INFO  WEBrick 1.3.1
+[2016-04-14 19:31:58] INFO  ruby 2.0.0 (2013-11-22) [x86_64-linux]
+[2016-04-14 19:31:58] INFO  WEBrick::HTTPServer#start: pid=12969 port=80
+[2016-04-15 02:56:07] ERROR Errno::ECONNRESET: Connection reset by peer
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:80:in `eof?'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:80:in `run'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+[2016-04-15 12:02:42] ERROR Errno::ECONNRESET: Connection reset by peer
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:80:in `eof?'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:80:in `run'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+[2016-04-15 12:02:42] ERROR Errno::ECONNRESET: Connection reset by peer
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:80:in `eof?'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:80:in `run'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+[2016-04-15 21:43:59] FATAL SignalException: SIGTERM
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/rack-1.5.5/lib/rack/server.rb:264:in `start'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.1.6/lib/rails/commands/server.rb:69:in `start'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.1.6/lib/rails/commands/commands_tasks.rb:81:in `block in server'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.1.6/lib/rails/commands/commands_tasks.rb:76:in `tap'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.1.6/lib/rails/commands/commands_tasks.rb:76:in `server'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.1.6/lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.1.6/lib/rails/commands.rb:17:in `<top (required)>'
+	/opt/rails/party/bin/rails:9:in `require'
+	/opt/rails/party/bin/rails:9:in `<top (required)>'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/spring-1.6.4/lib/spring/client/rails.rb:28:in `load'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/spring-1.6.4/lib/spring/client/rails.rb:28:in `call'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/spring-1.6.4/lib/spring/client/command.rb:7:in `call'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/spring-1.6.4/lib/spring/client.rb:28:in `run'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/spring-1.6.4/bin/spring:49:in `<top (required)>'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/spring-1.6.4/lib/spring/binstub.rb:11:in `load'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/spring-1.6.4/lib/spring/binstub.rb:11:in `<top (required)>'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:53:in `require'
+	/usr/local/rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:53:in `require'
+	/opt/rails/party/bin/spring:13:in `<top (required)>'
+	bin/rails:3:in `load'
+	bin/rails:3:in `<main>'
+[2016-04-15 21:43:59] INFO  going to shutdown ...
+[2016-04-15 21:43:59] INFO  WEBrick::HTTPServer#start done.
+=> Booting WEBrick
+=> Rails 4.1.6 application starting in production on http://0.0.0.0:80
+=> Run `rails server -h` for more startup options
+=> Notice: server is listening on all interfaces (0.0.0.0). Consider using 127.0.0.1 (--binding option)
+=> Ctrl-C to shutdown server
+Exiting

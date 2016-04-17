@@ -1,0 +1,18 @@
+<%= simple_form_for @answer, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :q1 %>
+  <%= f.input :q2 %>
+  <%= f.input :q3 %>
+  <%= f.input :q4 %>
+  <%= f.input :q5 %>
+  <%= f.input :q6 %>
+  <%= f.input :q7 %>
+  <%= f.input :q8 %>
+  <%= f.input :q9 %>
+  <%= f.input :q10 %>
+  <%= f.input :comment %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                answers_path, :class => 'btn btn-default' %>
+<% end %>

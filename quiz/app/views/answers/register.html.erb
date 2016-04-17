@@ -1,0 +1,13 @@
+<%- model_class = Answer -%>
+<div class="page-header">
+<!--  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1> -->
+
+</div>
+<div>
+ <H1>投稿を受け付けました。</H1>
+ <H1>Thank you for submitting!</H1>
+</div>
+<div>
+ <!--<%= button_tag "Close", type: 'button', onclick: "window.close();", class: "btn btn-success", name:"close", title:"close" %> -->
+ <%= button_tag "Close", type: 'button', onclick: "javascript:window.open('about:blank','_self').close();", class: "btn btn-success", name:"close", title:"close" %>
+</div>

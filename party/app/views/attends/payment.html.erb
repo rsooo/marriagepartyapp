@@ -1,0 +1,41 @@
+<%- model_class = Attend -%>
+<%msg_furikomi=(@english == nil) ? "振込先情報" : "Bank Account Information" %>
+<%msg_info=(@english == nil) ? "以下の口座のいずれかに振込みをお願いします。" : "Please send money to the account listed below:" %>
+<%msg_bank1=(@english == nil) ? "三菱東京UFJ銀行 大和郡山支店(280) 普通 口座番号 4554219 ｻｲﾄｳｱｷﾗ" : "BTMU Bank Yamato Koriyama Branch, Saving Account, Account Number: 4554219, Beneficiary Name: Saito Akira" %>
+<%msg_bank2=(@english == nil) ? "新生銀行 本店(400) 普通 口座番号 1432497 ｻｲﾄｳｱｷﾗ" : "Shinsei Bank, Head Office, Saving Account, Account Number: 1432497, Beneficiary Account: Saito Akira" %>
+<%msg_bank3=(@english == nil) ? "楽天銀行 オペラ支店(205) 普通 口座番号 1354578 ｻｲﾄｳｱｷﾗ" : "Rakuten Bank, Opera Branch, Saving Account, Account Number:1354578, Beneficiary Name: Saito AKira" %>
+
+<div class="page-header">
+<!--  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1> -->
+  <H1>振込先情報(Bank Account Information)</H1>
+</div>
+
+
+<div>
+  <p>以下の口座のいずれかに振込みをお願いします。</p>
+   <ul>
+   <li>三菱東京UFJ銀行 大和郡山支店(280) 普通 口座番号 4554219 ｻｲﾄｳｱｷﾗ </li>
+   <li>新生銀行 本店(400) 普通 口座番号 1432497 ｻｲﾄｳｱｷﾗ </li>
+   <li>楽天銀行 オペラ支店(205) 普通 口座番号 1354578 ｻｲﾄｳｱｷﾗ</li>
+ </ul>
+</div>
+<br>
+<div>
+  <p>Please send money to the account listed below:</p>
+   <ul>
+   <li>BTMU Bank Yamato Koriyama Branch, Saving Account, Account Number: 4554219, Beneficiary Name: Saito Akira </li>
+   <li>Shinsei Bank, Head Office, Saving Account, Account Number: 1432497, Beneficiary Account: Saito Akira</li>
+   <li>Q ten , delete payment character: from url, Account: Saito Akira</li>
+   <li>Rakuten Bank, Opera Branch, Saving Account, Account Number:1354578, Beneficiary Name: Saito AKira</li>
+ </ul>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<H1> <%= link_to "Q2 はこちら" , :controller => "attends", :action => "q2" %> </H1>
+<H1> <%= link_to "Q2 is here " , :controller => "attends", :action => "q2" %> </H1>
